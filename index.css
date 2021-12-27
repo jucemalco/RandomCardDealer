@@ -1,0 +1,36 @@
+body {
+    background-color: green;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    height: 400px;
+    width: 250px;
+    font-size: 80px;
+    border-radius: 20px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .arriba {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 80px;
+  }
+  
+  .abajo {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 80px;
+    transform-origin:bottom;
+  }
