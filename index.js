@@ -15,33 +15,34 @@ const numbers = [
   "K",
 ];
 function RandomCardGenerator() {
-    return Math.floor(Math.random() * suits.length);
-  }
+  return Math.floor(Math.random() * suits.length);
+}
+
 const randomSuit = suits[RandomCardGenerator()];
 
 const topSuit = document.querySelector(".arriba");
 if (randomSuit == "&hearts;") {
-topSuit.style.color = "red";
+  topSuit.style.color = "red";
 }
 if (randomSuit == "&diams;") {
-topSuit.style.color = "red";
+  topSuit.style.color = "red";
 }
 topSuit.innerHTML = randomSuit;
-  
+
 const bottomSuit = document.querySelector(".abajo");
 if (randomSuit == "&hearts;") {
-bottomSuit.style.color = "red";
+  bottomSuit.style.color = "red";
 }
 if (randomSuit == "&diams;") {
-bottomSuit.style.color = "red";
+  bottomSuit.style.color = "red";
 }
 bottomSuit.innerHTML = randomSuit;
-  
-function RandomCardGenerator() {
-return Math.floor(Math.random() * numbers.length);
+
+function RandomCardNumber() {
+  return Math.floor(Math.random() * numbers.length);
 }
-  
-const randomNumber = numbers[RandomCardGenerator()];
-  
+
+const randomNumber = numbers[RandomCardNumber()];
+
 const NewNumber = document.querySelector(".numero");
 NewNumber.innerHTML = randomNumber;
